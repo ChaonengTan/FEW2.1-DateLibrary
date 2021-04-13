@@ -85,16 +85,31 @@ class D {
         }
         return(returnString)
     }
+    when(){
+        const rn = new Date()
+        console.log('input: ', this.year, this._date.getMonth(), this._date.getDay())
+        console.log('right now: ', rn.getFullYear(), rn.getMonth(), rn.getDay())
+        if (this.year-rn.getFullYear()!=0){
+            return (this.year-rn.getFullYear()+ 'years')
+        }
+        if (this._date.getMonth()-rn.getMonth()!=0){
+            return (this._date.getMonth()-rn.getMonth()+ 'months')
+        }
+        return (this._date.getDay()-rn.getDay()+ 'days')
+    }
 }
-const rn = new D()
-console.log(rn.year)
-console.log(rn.yr)
-console.log(rn.month)
-console.log(rn.mon)
-console.log(rn.week)
-console.log(rn.wk)
-console.log(rn.date)
-console.log(rn.hours)
-console.log(rn.mins)
-console.log(rn.secs)
-console.log(rn.format('YmDhIs'))
+module.exports = D
+// const rn = new D()
+// const someday = new D(2200, 7, 17)
+// console.log(rn.year)
+// console.log(rn.yr)
+// console.log(rn.month)
+// console.log(rn.mon)
+// console.log(rn.week)
+// console.log(rn.wk)
+// console.log(rn.date)
+// console.log(rn.hours)
+// console.log(rn.mins)
+// console.log(rn.secs)
+// console.log(rn.format('Y/m/D/h/I/s'))
+// console.log(someday.when())
