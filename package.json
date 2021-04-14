@@ -1,0 +1,27 @@
+{
+  "name": "FEW2.1-DateLibrary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "jest": "^26.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaonengTan/FEW2.1-DateLibrary.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChaonengTan/FEW2.1-DateLibrary/issues"
+  },
+  "homepage": "https://github.com/ChaonengTan/FEW2.1-DateLibrary#readme"
+}
